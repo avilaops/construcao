@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento - Marcos Construção</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">MARCOS<span>CONSTRUÇÃO</span></a></h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html#home">Início</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="orcamento-page">
+        <div class="container">
+            <h1 class="page-title">Solicite Seu Orçamento</h1>
+            <p class="page-subtitle">Preencha o formulário abaixo e receba seu orçamento detalhado em até 48 horas</p>
+            
+            <div class="orcamento-grid">
+                <div class="orcamento-form">
+                    <form id="orcamentoForm">
+                        <h3>Dados Pessoais</h3>
+                        <input type="text" name="nome" placeholder="Nome Completo *" required>
+                        <input type="email" name="email" placeholder="Email *" required>
+                        <input type="tel" name="telefone" placeholder="Telefone/WhatsApp *" required>
+                        
+                        <h3>Sobre o Projeto</h3>
+                        <select name="tipo_obra" required>
+                            <option value="">Tipo de Obra *</option>
+                            <option value="casa_nova">Casa Nova</option>
+                            <option value="sobrado">Sobrado</option>
+                            <option value="reforma">Reforma</option>
+                            <option value="ampliacao">Ampliação</option>
+                        </select>
+                        
+                        <input type="number" name="area_m2" placeholder="Área Aproximada (m²)" min="50" max="1000">
+                        
+                        <input type="text" name="localizacao" placeholder="Bairro/Região em SJRP">
+                        
+                        <select name="prazo">
+                            <option value="">Prazo Desejado</option>
+                            <option value="urgente">Urgente (iniciar em 15 dias)</option>
+                            <option value="mes">Iniciar em 1 mês</option>
+                            <option value="trimestre">Iniciar em 3 meses</option>
+                            <option value="flexivel">Flexível</option>
+                        </select>
+                        
+                        <select name="orcamento">
+                            <option value="">Orçamento Disponível</option>
+                            <option value="ate_200k">Até R$ 200 mil</option>
+                            <option value="200_400k">R$ 200 a 400 mil</option>
+                            <option value="400_600k">R$ 400 a 600 mil</option>
+                            <option value="acima_600k">Acima de R$ 600 mil</option>
+                            <option value="nao_definido">Ainda não definido</option>
+                        </select>
+                        
+                        <h3>Detalhes do Projeto</h3>
+                        <textarea name="detalhes" rows="6" placeholder="Descreva seu projeto: número de quartos, acabamento desejado, necessidades especiais, etc."></textarea>
+                        
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="tem_terreno" value="sim">
+                                Já tenho o terreno
+                            </label>
+                            <label>
+                                <input type="checkbox" name="tem_projeto" value="sim">
+                                Já tenho projeto arquitetônico
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+                        <p class="form-note">Responderemos em até 24 horas úteis</p>
+                    </form>
+                </div>
+                
+                <div class="orcamento-info">
+                    <div class="info-box">
+                        <h3><i class="fas fa-clock"></i> Prazo de Resposta</h3>
+                        <p>Orçamento detalhado em até <strong>48 horas</strong></p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3><i class="fas fa-file-invoice"></i> O Que Inclui</h3>
+                        <ul>
+                            <li>Valor total da obra</li>
+                            <li>Cronograma detalhado</li>
+                            <li>Forma de pagamento</li>
+                            <li>Memorial descritivo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3><i class="fas fa-shield-alt"></i> Garantias</h3>
+                        <ul>
+                            <li>Orçamento sem compromisso</li>
+                            <li>Visita técnica gratuita</li>
+                            <li>Assessoria completa</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box cta-box">
+                        <h3>Prefere Falar Diretamente?</h3>
+                        <a href="https://wa.me/5517991642412?text=Olá! Gostaria de fazer um orçamento" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Marcos Construção. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
